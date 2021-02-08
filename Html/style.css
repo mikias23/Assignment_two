@@ -1,0 +1,236 @@
+*{
+    padding: none;
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+header {
+    margin-top: 0;
+    background: rgb(213, 213, 214);
+    color: #033d5f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+     
+
+}
+
+header .p{
+    font-size: 30px;
+    padding: 10px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+}
+.slideDown {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#033d5f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+   margin-top: 50%;
+    animation-name: scrollDown ;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+
+}
+@keyframes scrollDown {
+    0%{
+        margin-top: 2px ;
+    }
+   
+    100%{
+        margin-top: 10px;
+        background:rgb(255, 102, 0);
+    }
+}
+.slideDown .scroll{
+    color: white;
+    font-size: 14px;
+}
+.container {
+    
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: #4f6470;
+    text-align: center;
+}
+.container p {
+    background: #cccccc ;
+    color: #5f5f5f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto ;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header a{
+    margin-left: 60px;
+    font-size: 14px;
+background-color: rgb(104, 31, 5);    color:#cccccc;
+    padding: 10px;
+}
+.containers {
+    position: relative;
+    width: 90%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px 600px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background: #222222;
+padding-top: 30px;
+
+}
+.tabs p{
+    background: #cccccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.tabs p:hover {
+    color: white;
+    background: #222222;
+    cursor: pointer;
+}
+.tabscontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: #033d5f;
+}
+.tabContent{
+    display: none;
+    flex-direction: column;
+}
+.tabContent h3{
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.tabContent p{
+    color: #cccccc !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.hobby {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgb(5, 75, 51);
+}
+.hobby h2{
+    color: white;
+}
+.hobby .hoobyTab {
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hobby .hoobyTab .pictab {
+    width: 250px;
+    overflow: hidden;
+    margin: 0 10px;
+    background: rgba(255,255,255, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.hobby .pictab img {
+    width: 200px ;
+    height: 150px;
+}
+.hoobyTab .pictab p{
+    color: white;
+    font-size: 15px;
+    background: royalblue;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+.hoobyTab .pictab p:hover {
+    cursor: pointer;
+    background: orangered;
+}
+
+.slideImg {
+    background: #222222;
+    
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+
+}
+.slideImg .each {
+    position: relative;
+
+    display: none;
+    flex-direction: row;
+    height: 400px;
+    width: 650px;
+    overflow: hidden;
+}
+.slideImg .each .wrapper {
+    position: absolute;
+    width: 2600px;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+}
+.slideImg img {
+    height: 400px;
+    width: 650px;
+}
+.added{
+    animation-name: popup;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    opacity: 0;
+}
+@keyframes popup{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
